@@ -9,7 +9,4 @@ while True:
     # Read and print the serial data
     data = ser.readline().decode('utf-8')
     print(data, end='')
-    if data == 1:
-        outport.send(msg)
-    if data == 2:
-        outport.send(msg2)
+    #do stuff with the data
